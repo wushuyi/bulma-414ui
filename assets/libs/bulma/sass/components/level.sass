@@ -11,7 +11,7 @@
   // Responsiveness
   +mobile
     &:not(:last-child)
-      margin-bottom: 0.75rem
+      margin-bottom: px2rem(0.75 * 8)
 
 .level-left,
 .level-right
@@ -20,7 +20,7 @@
   flex-shrink: 0
   .level-item
     &:not(:last-child)
-      margin-right: 0.75rem
+      margin-right: px2rem(0.75 * 16)
     // Modifiers
     &.is-flexible
       flex-grow: 1
@@ -31,7 +31,7 @@
   // Responsiveness
   +mobile
     & + .level-right
-      margin-top: 1.5rem
+      margin-top: px2rem(1.5 * 8)
   +tablet
     display: flex
 

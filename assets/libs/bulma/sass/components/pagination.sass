@@ -89,7 +89,7 @@ $pagination-shadow-inset: inset 0 px2rem(1) px2rem(2) rgba($black, 0.2)
 .pagination-list
   li
     &:not(:first-child)
-      margin-left: 0.375rem
+      margin-left: px2rem(0.375 * 12)
 
 +mobile
   .pagination
@@ -98,11 +98,11 @@ $pagination-shadow-inset: inset 0 px2rem(1) px2rem(2) rgba($black, 0.2)
   .pagination-next
     flex-grow: 1
     flex-shrink: 1
-    width: calc(50% - 0.375rem)
+    width: calc(50% - px2rem(0.375 * 12))
   .pagination-next
-    margin-left: 0.75rem
+    margin-left: px2rem(0.75 * 12)
   .pagination-list
-    margin-top: 0.75rem
+    margin-top: px2rem(0.75 * 12)
     li
       flex-grow: 1
       flex-shrink: 1
@@ -115,7 +115,7 @@ $pagination-shadow-inset: inset 0 px2rem(1) px2rem(2) rgba($black, 0.2)
     order: 1
   .pagination-previous,
   .pagination-next
-    margin-left: 0.75rem
+    margin-left: px2rem(0.75 * 12)
   .pagination-previous
     order: 2
   .pagination-next
@@ -137,7 +137,7 @@ $pagination-shadow-inset: inset 0 px2rem(1) px2rem(2) rgba($black, 0.2)
         order: 1
       .pagination-next
         order: 2
-        margin-right: 0.75rem
+        margin-right: px2rem(0.75 * 12)
       .pagination-list
         justify-content: flex-end
         order: 3
