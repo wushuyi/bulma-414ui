@@ -1,23 +1,23 @@
-$input:                     $grey-darker !default
-$input-background:          $white !default
-$input-border:              $grey-lighter !default
+$input: $grey-darker !default
+$input-background: $white !default
+$input-border: $grey-lighter !default
 
-$input-hover:               $grey-darker !default
-$input-hover-border:        $grey-light !default
+$input-hover: $grey-darker !default
+$input-hover-border: $grey-light !default
 
-$input-focus:               $grey-darker !default
-$input-focus-border:        $link !default
+$input-focus: $grey-darker !default
+$input-focus-border: $link !default
 
-$input-disabled:            $text-light !default
+$input-disabled: $text-light !default
 $input-disabled-background: $background !default
-$input-disabled-border:     $background !default
+$input-disabled-border: $background !default
 
-$input-arrow:               $link !default
+$input-arrow: $link !default
 
-$input-icon:                $grey-lighter !default
-$input-icon-active:         $grey !default
+$input-icon: $grey-lighter !default
+$input-icon-active: $grey !default
 
-$input-radius:              $radius !default
+$input-radius: $radius !default
 
 =input
   +control
@@ -153,7 +153,7 @@ $input-radius:              $radius !default
 .help
   display: block
   font-size: $size-small
-  margin-top: 0.25rem
+  margin-top: px2rem(0.25 * 8)
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     &.is-#{$name}
@@ -166,7 +166,7 @@ $input-radius:              $radius !default
 
 .field
   &:not(:last-child)
-    margin-bottom: 0.75rem
+    margin-bottom: px2rem(0.75 * 8)
   // Modifiers
   &.has-addons
     display: flex
@@ -213,7 +213,7 @@ $input-radius:              $radius !default
       flex-shrink: 0
       &:not(:last-child)
         margin-bottom: 0
-        margin-right: 0.75rem
+        margin-right: px2rem(0.75 * 8)
       &.is-expanded
         flex-grow: 1
         flex-shrink: 1
@@ -229,12 +229,12 @@ $input-radius:              $radius !default
   .label
     font-size: inherit
   +mobile
-    margin-bottom: 0.5rem
+    margin-bottom: px2rem(0.5 * 8)
   +tablet
     flex-basis: 0
     flex-grow: 1
     flex-shrink: 0
-    margin-right: 1.5rem
+    margin-right: px2rem(1.5 * 8)
     text-align: right
     &.is-small
       font-size: $size-small
@@ -260,7 +260,7 @@ $input-radius:              $radius !default
         flex-grow: 1
       &:not(:last-child)
         margin-bottom: 0
-        margin-right: 0.75rem
+        margin-right: px2rem(0.75 * 8)
 
 .control
   font-size: $size-normal
@@ -292,33 +292,33 @@ $input-radius:              $radius !default
     &:not(.has-icon-right)
       .icon
         left: 0
-        // transform: translateX(-50%) translateY(-50%)
+      // transform: translateX(-50%) translateY(-50%)
       .input
         padding-left: 2.25em
-        // &.is-small
-        //   & + .icon
-        //     left: ($size-small * 2.5) / 2
-        // &.is-medium
-        //   & + .icon
-        //     left: ($size-medium * 2.5) / 2
-        // &.is-large
-        //   & + .icon
-        //     left: ($size-large * 2.5) / 2
+    // &.is-small
+    //   & + .icon
+    //     left: ($size-small * 2.5) / 2
+    // &.is-medium
+    //   & + .icon
+    //     left: ($size-medium * 2.5) / 2
+    // &.is-large
+    //   & + .icon
+    //     left: ($size-large * 2.5) / 2
     &.has-icon-right
       .icon
         right: 0
-        // transform: translateX(50%) translateY(-50%)
+      // transform: translateX(50%) translateY(-50%)
       .input
         padding-right: 2.25em
-        // &.is-small
-        //   & + .icon
-        //     right: ($size-small * 2.5) / 2
-        // &.is-medium
-        //   & + .icon
-        //     right: ($size-medium * 2.5) / 2
-        // &.is-large
-        //   & + .icon
-        //     right: ($size-large * 2.5) / 2
+  // &.is-small
+  //   & + .icon
+  //     right: ($size-small * 2.5) / 2
+  // &.is-medium
+  //   & + .icon
+  //     right: ($size-medium * 2.5) / 2
+  // &.is-large
+  //   & + .icon
+  //     right: ($size-large * 2.5) / 2
   &.is-loading
     &:after
       +loader

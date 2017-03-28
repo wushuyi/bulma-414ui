@@ -18,18 +18,18 @@
     display: none
 
 .hero-buttons
-  margin-top: 1.5rem
+  margin-top: px2rem(1.5 * 8)
   // Responsiveness
   +mobile
     .button
       display: flex
       &:not(:last-child)
-        margin-bottom: 0.75rem
+        margin-bottom: px2rem(0.75 * 8)
   +tablet
     display: flex
     justify-content: center
     .button:not(:last-child)
-      margin-right: 1.5rem
+      margin-right: px2rem(1.5 * 8)
 
 // Containers
 
@@ -41,7 +41,7 @@
 .hero-body
   flex-grow: 1
   flex-shrink: 0
-  padding: 3rem 1.5rem
+  padding: px2rem(3 * 8) px2rem(1.5 * 8)
   // Responsiveness
   +from($widescreen)
     padding-left: 0
@@ -132,13 +132,13 @@
   &.is-medium
     +tablet
       .hero-body
-        padding-bottom: 9rem
-        padding-top: 9rem
+        padding-bottom: px2rem(9 * 8)
+        padding-top: px2rem(9 * 8)
   &.is-large
     +tablet
       .hero-body
-        padding-bottom: 18rem
-        padding-top: 18rem
+        padding-bottom: px2rem(18 * 8)
+        padding-top: px2rem(18 * 8)
   &.is-fullheight
     min-height: 100vh
     .hero-body
