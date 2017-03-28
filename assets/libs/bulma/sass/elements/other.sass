@@ -1,0 +1,59 @@
+.block
+  +block
+
+.container
+  position: relative
+  +desktop
+    margin: 0 auto
+    width: $desktop - px2rem(40)
+    // Modifiers
+    &.is-fluid
+      margin: 0 px2rem(20)
+      max-width: none
+      width: auto
+  +widescreen
+    width: $widescreen - px2rem(40)
+  +fullhd
+    width: $fullhd - px2rem(40)
+
+.delete
+  +delete
+
+.fa
+  font-size: px2rem(21)
+  text-align: center
+  vertical-align: top
+
+.heading
+  display: block
+  font-size: px2rem(11)
+  letter-spacing: px2rem(1)
+  margin-bottom: px2rem(5)
+  text-transform: uppercase
+
+.highlight
+  +block
+  font-weight: $weight-normal
+  max-width: 100%
+  overflow: hidden
+  padding: 0
+  pre
+    overflow: auto
+    max-width: 100%
+
+.loader
+  +loader
+
+.number
+  align-items: center
+  background-color: $background
+  border-radius: px2rem(290486)
+  display: inline-flex
+  font-size: $size-medium
+  height: 2em
+  justify-content: center
+  margin-right: 1.5rem
+  min-width: 2.5em
+  padding: 0.25rem 0.5rem
+  text-align: center
+  vertical-align: top

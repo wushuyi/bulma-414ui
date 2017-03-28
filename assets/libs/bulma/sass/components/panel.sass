@@ -1,0 +1,74 @@
+.panel
+  font-size: $size-normal
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+.panel-heading,
+.panel-tabs,
+.panel-block
+  border-bottom: px2rem(1) solid $border
+  border-left: px2rem(1) solid $border
+  border-right: px2rem(1) solid $border
+  &:first-child
+    border-top: px2rem(1) solid $border
+
+.panel-heading
+  background-color: $background
+  border-radius: $radius $radius 0 0
+  color: $text-strong
+  font-size: 1.25em
+  font-weight: $weight-light
+  line-height: 1.25
+  padding: 0.5em 0.75em
+
+.panel-tabs
+  align-items: flex-end
+  display: flex
+  font-size: 0.875em
+  justify-content: center
+  a
+    border-bottom: px2rem(1) solid $border
+    margin-bottom: px2rem(-1)
+    padding: 0.5em
+    // Modifiers
+    &.is-active
+      border-bottom-color: $link-active-border
+      color: $link-active
+
+.panel-list
+  a
+    color: $text
+    &:hover
+      color: $link
+
+.panel-block
+  align-items: center
+  color: $text-strong
+  display: flex
+  justify-content: flex-start
+  padding: 0.5em 0.75em
+  input[type="checkbox"]
+    margin-right: 0.75em
+  & > .control
+    flex-grow: 1
+    flex-shrink: 1
+    width: 100%
+  &.is-active
+    border-left-color: $link
+    color: $link-active
+    .panel-icon
+      color: $link
+
+a.panel-block,
+label.panel-block
+  cursor: pointer
+  &:hover
+    background-color: $background
+
+.panel-icon
+  +fa(px2rem(14), 1em)
+  color: $text-light
+  margin-right: 0.75em
+  .fa
+    font-size: inherit
+    line-height: inherit

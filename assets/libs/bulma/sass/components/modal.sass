@@ -1,0 +1,81 @@
+.modal-background
+  +overlay
+  background-color: rgba($black, 0.86)
+
+.modal-content,
+.modal-card
+  margin: 0 px2rem(20)
+  max-height: calc(100vh - px2rem(160))
+  overflow: auto
+  position: relative
+  width: 100%
+  // Responsiveness
+  +tablet
+    margin: 0 auto
+    max-height: calc(100vh - px2rem(40))
+    width: px2rem(640)
+
+.modal-close
+  +delete
+  background: none
+  height: px2rem(40)
+  position: fixed
+  right: px2rem(20)
+  top: px2rem(20)
+  width: px2rem(40)
+
+.modal-card
+  display: flex
+  flex-direction: column
+  max-height: calc(100vh - px2rem(40))
+  overflow: hidden
+
+.modal-card-head,
+.modal-card-foot
+  align-items: center
+  background-color: $background
+  display: flex
+  flex-shrink: 0
+  justify-content: flex-start
+  padding: px2rem(20)
+  position: relative
+
+.modal-card-head
+  border-bottom: px2rem(1) solid $border
+  border-top-left-radius: $radius-large
+  border-top-right-radius: $radius-large
+
+.modal-card-title
+  color: $text-strong
+  flex-grow: 1
+  flex-shrink: 0
+  font-size: $size-4
+  line-height: 1
+
+.modal-card-foot
+  border-bottom-left-radius: $radius-large
+  border-bottom-right-radius: $radius-large
+  border-top: px2rem(1) solid $border
+  .button
+    &:not(:last-child)
+      margin-right: px2rem(10)
+
+.modal-card-body
+  +overflow-touch
+  background-color: $white
+  flex-grow: 1
+  flex-shrink: 1
+  overflow: auto
+  padding: px2rem(20)
+
+.modal
+  +overlay
+  align-items: center
+  display: none
+  justify-content: center
+  overflow: hidden
+  position: fixed
+  z-index: 1986
+  // Modifiers
+  &.is-active
+    display: flex

@@ -1,0 +1,54 @@
+.header {
+  width: 16rem;
+  height: 1.70821rem;
+  opacity: 0.7;
+  background: #FFFFFF;
+  box-shadow: 0 1px 1px 0 rgba(146, 146, 146, 0.5); }
+
+.taba {
+  height: 100%;
+  position: relative; }
+  .taba .tabas {
+    height: 100%;
+    padding: 0.38647rem 0.38647rem;
+    margin: 0 0.38647rem;
+    font-family: stheitisc-light;
+    font-size: 0.76792rem;
+    color: #606060;
+    line-height: 0.66242rem;
+    position: relative;
+    display: block;
+    float: left; }
+    .taba .tabas.action {
+      color: #FF6121; }
+      .taba .tabas.action:after {
+        content: "";
+        display: block;
+        height: 0.07729rem;
+        width: 96%;
+        background: #FF6121;
+        position: absolute;
+        bottom: -0.03865rem;
+        left: 0.15459rem; }
+
+.taba.hd1 {
+  margin-left: 1.54589rem; }
+
+.header2 {
+  width: 16rem;
+  height: 1.58454rem;
+  background: #FFFFFF;
+  border-bottom: 0.07729rem #D8D8D8 solid; }
+
+.hd2 .tabas.action:after {
+  width: 0.19324rem;
+  height: 0.19324rem;
+  border-radius: 0.09662rem;
+  background: #FF6121;
+  left: 50%;
+  margin-left: -0.11594rem; }
+
+.icon .fa {
+  font-size: 1.00483rem; }
+
+/*# sourceMappingURL=tmp1.css.map */

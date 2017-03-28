@@ -1,0 +1,68 @@
+$table:                           $grey-darker !default
+$table-background:                $white !default
+$table-border:                    $grey-lighter !default
+
+$table-head:                      $grey !default
+
+$table-row-hover-background:      $white-bis !default
+$table-row-even-background:       $white-bis !default
+$table-row-even-hover-background: $white-ter !default
+
+.table
+  background-color: $table-background
+  color: $table
+  margin-bottom: 1.5rem
+  width: 100%
+  td,
+  th
+    border: px2rem(1) solid $table-border
+    border-width: 0 0 px2rem(1)
+    padding: 0.5em 0.75em
+    vertical-align: top
+    // Modifiers
+    &.is-narrow
+      white-space: nowrap
+      width: 1%
+  th
+    color: $text-strong
+    text-align: left
+  tr
+    &:hover
+      background-color: $table-row-hover-background
+  thead
+    td,
+    th
+      border-width: 0 0 px2rem(2)
+      color: $table-head
+  tfoot
+    td,
+    th
+      border-width: px2rem(2) 0 0
+      color: $table-head
+  tbody
+    tr
+      &:last-child
+        td,
+        th
+          border-bottom-width: 0
+  // Modifiers
+  &.is-bordered
+    td,
+    th
+      border-width: px2rem(1)
+    tr
+      &:last-child
+        td,
+        th
+          border-bottom-width: px2rem(1)
+  &.is-narrow
+    td,
+    th
+      padding: 0.25em 0.5em
+  &.is-striped
+    tbody
+      tr
+        &:nth-child(even)
+          background-color: $table-row-even-background
+          &:hover
+            background-color: $table-row-even-hover-background
